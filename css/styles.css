@@ -785,3 +785,124 @@ select.form-control option { background: var(--card); }
 }
 .divider-text::before,
 .divider-text::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+/* ── Theme Toggle Button ───────────────────────────────────── */
+.theme-toggle {
+  background: transparent;
+  border: 1.5px solid var(--border-bright);
+  border-radius: var(--radius-pill);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  line-height: 1;
+  padding: 0;
+}
+.theme-toggle:hover {
+  border-color: var(--orange);
+  background: rgba(255, 107, 53, 0.1);
+  transform: rotate(18deg) scale(1.08);
+}
+
+/* ── Light Theme — Spring / Summer Festival Day ────────────── */
+html[data-theme="light"] {
+  --bg:            #FFFBF4;
+  --surface:       #FEF3E0;
+  --card:          #FFFFFF;
+  --card-hover:    #FFF8EE;
+  --border:        rgba(201, 120, 30, 0.14);
+  --border-bright: rgba(201, 120, 30, 0.38);
+
+  --orange:      #D94F0A;
+  --orange-dark: #B83D08;
+  --purple:      #6D28D9;
+  --purple-dark: #5B21B6;
+  --teal:        #0D9488;
+  --gold:        #B45309;
+  --cream:       #FFFBF4;
+
+  --text-primary:   #1A1008;
+  --text-secondary: #6B5A40;
+  --text-muted:     #9B8A70;
+
+  --shadow-card: 0 4px 24px rgba(180, 80, 10, 0.09);
+  --shadow-hover: 0 8px 40px rgba(180, 80, 10, 0.14);
+  --shadow-btn: 0 2px 12px rgba(217, 79, 10, 0.28);
+}
+
+html[data-theme="light"] .site-nav {
+  background: rgba(255, 251, 244, 0.95);
+  border-bottom-color: rgba(201, 120, 30, 0.18);
+}
+html[data-theme="light"] .nav-links a { color: var(--text-secondary); }
+html[data-theme="light"] .nav-links a:hover,
+html[data-theme="light"] .nav-links a.active { color: var(--text-primary); background: rgba(0,0,0,0.05); }
+
+html[data-theme="light"] .hero {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(251, 191, 36, 0.30) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 50% at 80% 80%, rgba(255, 107, 53, 0.14) 0%, transparent 60%),
+    var(--bg);
+}
+html[data-theme="light"] .hero::before {
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D94F0A' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+html[data-theme="light"] .search-bar {
+  box-shadow: 0 4px 32px rgba(180, 80, 10, 0.10);
+}
+
+html[data-theme="light"] .card-image {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.20), rgba(255, 107, 53, 0.15));
+}
+
+html[data-theme="light"] .page-hero {
+  background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(251, 191, 36, 0.24) 0%, transparent 70%);
+  border-bottom-color: rgba(201, 120, 30, 0.14);
+}
+
+html[data-theme="light"] .event-hero {
+  background: linear-gradient(160deg, rgba(251, 191, 36, 0.14) 0%, rgba(255, 107, 53, 0.10) 100%);
+}
+
+html[data-theme="light"] .cta-banner {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.14) 0%, rgba(255, 107, 53, 0.08) 100%);
+  border-color: rgba(201, 120, 30, 0.28);
+}
+
+html[data-theme="light"] .email-signup {
+  border-color: rgba(201, 120, 30, 0.20);
+}
+
+html[data-theme="light"] .pricing-card.featured {
+  background: linear-gradient(160deg, rgba(217, 79, 10, 0.06) 0%, var(--card) 60%);
+}
+
+html[data-theme="light"] .site-footer {
+  background: var(--surface);
+  border-top-color: rgba(201, 120, 30, 0.18);
+}
+
+html[data-theme="light"] .festival-card:hover {
+  box-shadow: 0 8px 40px rgba(180, 80, 10, 0.14);
+}
+
+/* category badge tint adjustments for light bg */
+html[data-theme="light"] .category-badge       { background: rgba(109,40,217,0.08);  border-color: rgba(109,40,217,0.20);  }
+html[data-theme="light"] .category-badge.music { background: rgba(217,79,10,0.08);   border-color: rgba(217,79,10,0.22);   }
+html[data-theme="light"] .category-badge.food  { background: rgba(180,83,9,0.08);    border-color: rgba(180,83,9,0.22);    }
+html[data-theme="light"] .category-badge.art   { background: rgba(109,40,217,0.08);  border-color: rgba(109,40,217,0.20);  }
+html[data-theme="light"] .category-badge.wellness  { background: rgba(13,148,136,0.08); border-color: rgba(13,148,136,0.22); }
+html[data-theme="light"] .category-badge.cultural  { background: rgba(217,79,10,0.08);  border-color: rgba(217,79,10,0.22);  }
+html[data-theme="light"] .category-badge.spiritual { background: rgba(109,40,217,0.08); color: var(--purple); border-color: rgba(109,40,217,0.20); }
+
+html[data-theme="light"] .featured-badge { color: #fff; }
+
+html[data-theme="light"] .step-number {
+  box-shadow: 0 4px 16px rgba(217,79,10,0.22);
+}

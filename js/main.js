@@ -2,7 +2,14 @@
    FestivalCalendar.online — Main JS
    ============================================================ */
 
+/* Instant theme boot — runs before paint to avoid flash */
+(function () {
+  const t = localStorage.getItem('fco_theme');
+  if (t === 'light') document.documentElement.dataset.theme = 'light';
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   initNav();
   initPage();
   initForms();
@@ -226,3 +233,24 @@ function getWeekendLabel() {
 
 // Expose for inline use
 window.festivalUtils = { formatDateRange, getWeekendLabel, getByCity, getByCategory, getByState, searchFestivals, renderFestivalCards };
+
+/* ── Theme Toggle ──────────────────────────────────────────── */
+function initTheme() {
+  const saved = localStorage.getItem('fco_theme') || 'dark';
+  applyTheme(saved, false);
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const current = document.documentElement.dataset.theme || 'dark';
+    applyTheme(current === 'dark' ? 'light' : 'dark', true);
+  });
+}
+
+function applyTheme(theme, animate) {
+  if (animate) {
+    document.documentElement.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+    setTimeout(() => { document.documentElement.style.transition = ''; }, 400);
+  }
+  document.documentElement.dataset.theme = theme;
+  localStorage.setItem('fco_theme', theme);
+  const btn = document.getElementById('theme-toggle');
+  if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+}
