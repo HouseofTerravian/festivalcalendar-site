@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Festivals Near You | FestivalCalendar.online</title>
+  <meta name="description" content="Discover music, food, art, wellness, spiritual, and cultural festivals near you. Browse by city, state, weekend, and category. Save your favorites and build your personal festival calendar.">
+  <meta name="keywords" content="festivals near me, music festivals, food festivals, art festivals, wellness festivals, cultural festivals, festival calendar, festivals this weekend">
+  <meta property="og:title" content="FestivalCalendar.online — Find Festivals Near You">
+  <meta property="og:description" content="Discover music, food, art, wellness, spiritual, and cultural festivals near you. Save your favorites and build your personal festival calendar.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://festivalcalendar.online">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://festivalcalendar.online">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">🎪 FestivalCalendar</a>
+    <ul class="nav-links">
+      <li><a href="festivals-near-me.html">Near Me</a></li>
+      <li><a href="this-weekend.html">This Weekend</a></li>
+      <li><a href="category.html">Categories</a></li>
+      <li><a href="city.html">Cities</a></li>
+      <li><a href="submit.html">Submit</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://id.thenooworld.com?redirect=https://festivalcalendar.online" class="btn btn-outline btn-sm">Sign in with Noo World</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-eyebrow">🎉 Festival Season Is Here</div>
+    <h1>Find <span>Festivals</span> Near You</h1>
+    <p class="hero-sub">Discover music, food, art, wellness, spiritual, and cultural festivals happening near you. Save your favorites and build your personal festival calendar.</p>
+    <div class="hero-ctas">
+      <a href="festivals-near-me.html" class="btn btn-primary btn-lg">Find Festivals</a>
+      <a href="https://id.thenooworld.com?redirect=https://festivalcalendar.online" class="btn btn-outline btn-lg">Sign in with Noo World</a>
+    </div>
+    <form class="search-bar" id="search-form" role="search" aria-label="Search festivals">
+      <input type="text" name="city" placeholder="City or state..." aria-label="Search by city or state">
+      <select name="category" aria-label="Filter by category">
+        <option value="">All Categories</option>
+        <option value="Music">🎵 Music</option>
+        <option value="Food">🍕 Food</option>
+        <option value="Art">🎨 Art</option>
+        <option value="Wellness">🧘 Wellness</option>
+        <option value="Cultural">🌍 Cultural</option>
+        <option value="Spiritual">✨ Spiritual</option>
+      </select>
+      <input type="date" name="date" aria-label="Filter by date">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+  </div>
+</section>
+
+<!-- This Weekend -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Happening Soon</span>
+      <h2>Festivals This Weekend</h2>
+      <p>Don't miss what's happening near you. These festivals are coming up fast.</p>
+    </div>
+    <div class="festivals-grid" id="this-weekend-festivals">
+      <div class="empty-state"><div class="empty-icon">⏳</div><p>Loading festivals...</p></div>
+    </div>
+    <div class="text-center mt-32">
+      <a href="this-weekend.html" class="btn btn-outline">See All Weekend Festivals →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Popular Categories -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Browse by Vibe</span>
+      <h2>Popular Categories</h2>
+      <p>Whatever you're into, there's a festival for it. Explore by category.</p>
+    </div>
+    <div class="categories-grid">
+      <a href="category.html?cat=Music" class="category-card">
+        <span class="cat-emoji">🎵</span>
+        <div class="cat-name">Music</div>
+        <div class="cat-count">Live concerts &amp; festivals</div>
+      </a>
+      <a href="category.html?cat=Food" class="category-card">
+        <span class="cat-emoji">🍕</span>
+        <div class="cat-name">Food</div>
+        <div class="cat-count">Culinary events &amp; fairs</div>
+      </a>
+      <a href="category.html?cat=Art" class="category-card">
+        <span class="cat-emoji">🎨</span>
+        <div class="cat-name">Art</div>
+        <div class="cat-count">Galleries &amp; installations</div>
+      </a>
+      <a href="category.html?cat=Wellness" class="category-card">
+        <span class="cat-emoji">🧘</span>
+        <div class="cat-name">Wellness</div>
+        <div class="cat-count">Yoga, healing &amp; retreat</div>
+      </a>
+      <a href="category.html?cat=Cultural" class="category-card">
+        <span class="cat-emoji">🌍</span>
+        <div class="cat-name">Cultural</div>
+        <div class="cat-count">Heritage &amp; community</div>
+      </a>
+      <a href="category.html?cat=Spiritual" class="category-card">
+        <span class="cat-emoji">✨</span>
+        <div class="cat-name">Spiritual</div>
+        <div class="cat-count">Mindful &amp; metaphysical</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Festivals -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Editor's Picks</span>
+      <h2>Featured Festivals</h2>
+      <p>Hand-selected standout experiences from across the country.</p>
+    </div>
+    <div class="festivals-grid" id="featured-festivals">
+      <div class="empty-state"><div class="empty-icon">⏳</div><p>Loading festivals...</p></div>
+    </div>
+    <div class="text-center mt-32">
+      <a href="festivals-near-me.html" class="btn btn-outline">Browse All Festivals →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Browse by City -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Find Your City</span>
+      <h2>Browse Festivals by City</h2>
+      <p>Click your city to discover what's happening near you.</p>
+    </div>
+    <div class="cities-grid">
+      <a href="city.html?city=Austin"        class="city-card"><span class="city-icon">🎸</span><div class="city-info"><div class="city-name">Austin, TX</div><div class="city-meta">Music &amp; Food</div></div></a>
+      <a href="city.html?city=New Orleans"   class="city-card"><span class="city-icon">🎷</span><div class="city-info"><div class="city-name">New Orleans, LA</div><div class="city-meta">Jazz &amp; Culture</div></div></a>
+      <a href="city.html?city=Chicago"       class="city-card"><span class="city-icon">🍕</span><div class="city-info"><div class="city-name">Chicago, IL</div><div class="city-meta">Food &amp; Art</div></div></a>
+      <a href="city.html?city=Atlanta"       class="city-card"><span class="city-icon">🌴</span><div class="city-info"><div class="city-name">Atlanta, GA</div><div class="city-meta">Cultural &amp; Music</div></div></a>
+      <a href="city.html?city=Portland"      class="city-card"><span class="city-icon">🌲</span><div class="city-info"><div class="city-name">Portland, OR</div><div class="city-meta">Art &amp; Wellness</div></div></a>
+      <a href="city.html?city=Nashville"     class="city-card"><span class="city-icon">🎶</span><div class="city-info"><div class="city-name">Nashville, TN</div><div class="city-meta">Country &amp; Spiritual</div></div></a>
+      <a href="city.html?city=Miami"         class="city-card"><span class="city-icon">🌊</span><div class="city-info"><div class="city-name">Miami, FL</div><div class="city-meta">Art &amp; Cultural</div></div></a>
+      <a href="city.html?city=Denver"        class="city-card"><span class="city-icon">🏔️</span><div class="city-info"><div class="city-name">Denver, CO</div><div class="city-meta">Music &amp; Wellness</div></div></a>
+      <a href="city.html?city=Philadelphia"  class="city-card"><span class="city-icon">🏛️</span><div class="city-info"><div class="city-name">Philadelphia, PA</div><div class="city-meta">Cultural &amp; Food</div></div></a>
+      <a href="city.html?city=Detroit"       class="city-card"><span class="city-icon">🎧</span><div class="city-info"><div class="city-name">Detroit, MI</div><div class="city-meta">Electronic &amp; Culture</div></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Simple Process</span>
+      <h2>How It Works</h2>
+      <p>Finding your next festival experience is three steps away.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card fade-up">
+        <div class="step-number">1</div>
+        <h3>Search</h3>
+        <p>Enter your city, state, or browse by category, weekend, or date to find festivals near you.</p>
+      </div>
+      <div class="step-card fade-up fade-up-delay-1">
+        <div class="step-number">2</div>
+        <h3>Save</h3>
+        <p>Sign in with your free Noo World account to save favorites, follow cities, and get weekly alerts.</p>
+      </div>
+      <div class="step-card fade-up fade-up-delay-2">
+        <div class="step-number">3</div>
+        <h3>Attend</h3>
+        <p>Click through to buy tickets, get directions, and experience the best festivals near you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Noo World CTA -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="cta-banner">
+      <span class="section-eyebrow">Personalize Your Calendar</span>
+      <h2>Never Miss a Festival Again</h2>
+      <p>Sign in with Noo World to save your favorite festivals, follow cities, and receive personalized weekly festival alerts.</p>
+      <div class="btn-group">
+        <a href="https://id.thenooworld.com?redirect=https://festivalcalendar.online" class="btn btn-primary btn-lg">Sign in with Noo World</a>
+        <a href="about.html" class="btn btn-outline btn-lg">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- For Organizers & Vendors -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Grow Your Reach</span>
+      <h2>For Organizers &amp; Vendors</h2>
+      <p>List your festival or promote your vendor business to thousands of festival-goers.</p>
+    </div>
+    <div class="two-col-grid">
+      <div class="info-card">
+        <div class="card-icon">🗓️</div>
+        <h3>Festival Organizers</h3>
+        <p>Reach festival-goers actively searching for experiences like yours. From free listings to featured placements, we have options for every budget.</p>
+        <ul>
+          <li>Submit your festival for free</li>
+          <li>Boost visibility with featured placement</li>
+          <li>Sponsor city or category pages</li>
+          <li>Link your ticketing page directly</li>
+          <li>Reach targeted local audiences</li>
+        </ul>
+        <a href="submit.html" class="btn btn-primary">Submit Your Festival</a>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🛒</div>
+        <h3>Vendors &amp; Makers</h3>
+        <p>Find festivals that match your business and promote your vendor availability to festival organizers looking for great vendors.</p>
+        <ul>
+          <li>Create a vendor profile listing</li>
+          <li>Connect with festival organizers</li>
+          <li>Browse festivals accepting vendors</li>
+          <li>Feature across multiple cities</li>
+          <li>Reach food trucks, artists, makers</li>
+        </ul>
+        <a href="vendors.html" class="btn btn-secondary">Create Vendor Listing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Preview -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Simple Pricing</span>
+      <h2>Plans for Every Need</h2>
+      <p>Whether you're a casual festival-goer, organizer, or sponsor, we have the right option for you.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div>
+          <div class="pricing-name">Free Listing</div>
+          <div class="pricing-price">$0</div>
+          <div class="pricing-desc">Perfect for getting your festival in front of searchers.</div>
+        </div>
+        <ul class="pricing-features">
+          <li>Basic festival listing</li>
+          <li>Searchable by city &amp; category</li>
+          <li>Link to your website</li>
+          <li>Reviewed before publishing</li>
+        </ul>
+        <a href="submit.html" class="btn btn-outline btn-block">Submit Free</a>
+      </div>
+      <div class="pricing-card featured">
+        <div>
+          <div class="pricing-name">Featured Event</div>
+          <div class="pricing-price">$9<span>–$49</span></div>
+          <div class="pricing-desc">Boost visibility on city, weekend, and category pages.</div>
+        </div>
+        <ul class="pricing-features">
+          <li>Featured badge &amp; placement</li>
+          <li>City page spotlight</li>
+          <li>Weekend discovery boost</li>
+          <li>Category page feature</li>
+          <li>Affiliate ticket link</li>
+        </ul>
+        <a href="pricing.html" data-product="featured-event" class="btn btn-primary btn-block">Get Featured</a>
+      </div>
+      <div class="pricing-card">
+        <div>
+          <div class="pricing-name">Vendor Listing</div>
+          <div class="pricing-price">$19<span>–$99</span></div>
+          <div class="pricing-desc">Promote vendor opportunities and connect with organizers.</div>
+        </div>
+        <ul class="pricing-features">
+          <li>Vendor profile listing</li>
+          <li>Organizer discovery</li>
+          <li>Multi-city exposure</li>
+          <li>Enhanced vendor profile</li>
+          <li>Priority vendor placement</li>
+        </ul>
+        <a href="vendors.html" class="btn btn-outline btn-block">Create Listing</a>
+      </div>
+      <div class="pricing-card">
+        <div>
+          <div class="pricing-name">Sponsored City</div>
+          <div class="pricing-price">Custom</div>
+          <div class="pricing-desc">Own a city's festival discovery page.</div>
+        </div>
+        <ul class="pricing-features">
+          <li>City page sponsorship</li>
+          <li>Logo &amp; brand placement</li>
+          <li>Featured city listing</li>
+          <li>Monthly or campaign billing</li>
+          <li>Custom promotion options</li>
+        </ul>
+        <a href="contact.html" class="btn btn-teal btn-block">Get in Touch</a>
+      </div>
+    </div>
+    <div class="text-center mt-32">
+      <a href="pricing.html" class="btn btn-ghost">View Full Pricing Details →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Email Signup -->
+<section class="section">
+  <div class="container">
+    <div class="email-signup">
+      <span class="section-eyebrow">Stay in the Loop</span>
+      <h2>Get Weekly Festival Alerts</h2>
+      <p>We'll send you a curated list of festivals happening near you every week. No spam, just festivals.</p>
+      <form class="email-form email-signup-form">
+        <input type="email" class="form-control" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit" class="btn btn-primary">Get Alerts</button>
+        <div class="form-success">🎉 You're in! Watch your inbox for weekly festival picks.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">🎪 FestivalCalendar</div>
+        <p>Find festivals near you. Save your favorites. Build your personal festival calendar.</p>
+        <p class="footer-entity">A Noo World Discovery Platform</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="festivals-near-me.html">Festivals Near Me</a></li>
+          <li><a href="this-weekend.html">This Weekend</a></li>
+          <li><a href="category.html">Categories</a></li>
+          <li><a href="city.html">Cities</a></li>
+          <li><a href="submit.html">Submit a Festival</a></li>
+          <li><a href="vendors.html">Vendor Listings</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-legal">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="ada.html">ADA Accessibility</a></li>
+          <li><a href="affiliates.html">Affiliate Disclosure</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:support@festivalcalendar.online">support@festivalcalendar.online</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FestivalCalendar.online — A Noo World Discovery Platform. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/festivals-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/filters.js"></script>
+</body>
+</html>

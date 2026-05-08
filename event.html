@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festival Details | FestivalCalendar.online</title>
+  <meta name="description" content="Get full details, dates, location, and ticket info for this festival. Save it to your personal festival calendar with Noo World." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">🎪 FestivalCalendar</a>
+    <ul class="nav-links">
+      <li><a href="festivals-near-me.html">Near Me</a></li>
+      <li><a href="this-weekend.html">This Weekend</a></li>
+      <li><a href="category.html">Categories</a></li>
+      <li><a href="city.html">Cities</a></li>
+      <li><a href="submit.html">Submit</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://id.thenooworld.com?redirect=https://festivalcalendar.online" class="btn btn-outline btn-sm">Sign in with Noo World</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:32px;padding-bottom:80px">
+  <a href="festivals-near-me.html" class="btn btn-ghost btn-sm" style="margin-bottom:24px;display:inline-flex">← Back to Festivals</a>
+
+  <!-- Event detail injected by filters.js renderEventDetail() -->
+  <div id="event-detail">
+    <div class="empty-state">
+      <div class="empty-icon">⏳</div>
+      <h3>Loading festival details…</h3>
+    </div>
+  </div>
+</div>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Save This Festival to Your Calendar</h2>
+      <p>Sign in with Noo World to save festivals, follow cities, and get weekly alerts so you never miss an experience.</p>
+      <div class="btn-group">
+        <a href="https://id.thenooworld.com?redirect=https://festivalcalendar.online" class="btn btn-primary btn-lg">Sign in with Noo World</a>
+        <a href="festivals-near-me.html" class="btn btn-outline btn-lg">Browse More Festivals</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">🎪 FestivalCalendar</div>
+        <p>Find festivals near you. Save your favorites. Build your personal festival calendar.</p>
+        <p class="footer-entity">A Noo World Discovery Platform</p>
+      </div>
+      <div>
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="festivals-near-me.html">Festivals Near Me</a></li>
+          <li><a href="this-weekend.html">This Weekend</a></li>
+          <li><a href="category.html">Categories</a></li>
+          <li><a href="city.html">Cities</a></li>
+          <li><a href="submit.html">Submit a Festival</a></li>
+          <li><a href="vendors.html">Vendor Listings</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="ada.html">ADA Accessibility</a></li>
+          <li><a href="affiliates.html">Affiliate Disclosure</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:support@festivalcalendar.online">support@festivalcalendar.online</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FestivalCalendar.online — A Noo World Discovery Platform. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/festivals-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/filters.js"></script>
+</body>
+</html>

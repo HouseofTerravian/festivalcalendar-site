@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festivals in [State] | FestivalCalendar.online</title>
+  <meta name="description" content="Browse music, food, art, wellness, cultural, and spiritual festivals across every state. Find the best festivals in your state today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">🎪 FestivalCalendar</a>
+    <ul class="nav-links">
+      <li><a href="festivals-near-me.html">Near Me</a></li>
+      <li><a href="this-weekend.html">This Weekend</a></li>
+      <li><a href="category.html">Categories</a></li>
+      <li><a href="city.html">Cities</a></li>
+      <li><a href="submit.html">Submit</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://id.thenooworld.com?redirect=https://festivalcalendar.online" class="btn btn-outline btn-sm">Sign in with Noo World</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">State Festival Guide</span>
+    <h1 data-dynamic="state-title">Browse Festivals by State</h1>
+    <p class="page-hero-sub">From music festivals to food fairs, art shows to wellness retreats — discover every festival happening across your state.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- State selector (shown when no state param) -->
+    <div id="state-browse-section">
+      <div class="section-header text-center mb-32">
+        <h2>Choose a State</h2>
+        <p>Select a state to browse its full festival calendar.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px">
+        <a href="state.html?state=Texas"      class="city-card"><span class="city-icon">⭐</span><div class="city-info"><div class="city-name">Texas</div><div class="city-meta">Austin, Dallas, Houston</div></div></a>
+        <a href="state.html?state=Louisiana"  class="city-card"><span class="city-icon">🎷</span><div class="city-info"><div class="city-name">Louisiana</div><div class="city-meta">New Orleans, Baton Rouge</div></div></a>
+        <a href="state.html?state=Illinois"   class="city-card"><span class="city-icon">🌆</span><div class="city-info"><div class="city-name">Illinois</div><div class="city-meta">Chicago, Springfield</div></div></a>
+        <a href="state.html?state=Georgia"    class="city-card"><span class="city-icon">🍑</span><div class="city-info"><div class="city-name">Georgia</div><div class="city-meta">Atlanta, Savannah</div></div></a>
+        <a href="state.html?state=Oregon"     class="city-card"><span class="city-icon">🌲</span><div class="city-info"><div class="city-name">Oregon</div><div class="city-meta">Portland, Eugene</div></div></a>
+        <a href="state.html?state=Tennessee"  class="city-card"><span class="city-icon">🎸</span><div class="city-info"><div class="city-name">Tennessee</div><div class="city-meta">Nashville, Memphis</div></div></a>
+        <a href="state.html?state=Florida"    class="city-card"><span class="city-icon">🌴</span><div class="city-info"><div class="city-name">Florida</div><div class="city-meta">Miami, Orlando, Tampa</div></div></a>
+        <a href="state.html?state=Colorado"   class="city-card"><span class="city-icon">🏔️</span><div class="city-info"><div class="city-name">Colorado</div><div class="city-meta">Denver, Boulder, Aspen</div></div></a>
+        <a href="state.html?state=Pennsylvania" class="city-card"><span class="city-icon">🏛️</span><div class="city-info"><div class="city-name">Pennsylvania</div><div class="city-meta">Philadelphia, Pittsburgh</div></div></a>
+        <a href="state.html?state=Michigan"   class="city-card"><span class="city-icon">🎧</span><div class="city-info"><div class="city-name">Michigan</div><div class="city-meta">Detroit, Ann Arbor</div></div></a>
+      </div>
+    </div>
+
+    <!-- State results (populated by filters.js when ?state= param is present) -->
+    <div id="state-results-section" style="display:none">
+      <!-- Category-grouped headings inserted by renderStateCategoryHeadings() -->
+      <div id="state-category-headings"></div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Organizing a Festival in Your State?</h2>
+      <p>Submit your event for free and get in front of people actively searching for festivals in <span data-dynamic="state-name">your state</span>.</p>
+      <div class="btn-group">
+        <a href="submit.html" class="btn btn-primary">Submit Your Festival</a>
+        <a href="pricing.html" class="btn btn-outline">Featured Placement Options</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">🎪 FestivalCalendar</div>
+        <p>Find festivals near you. Save your favorites. Build your personal festival calendar.</p>
+        <p class="footer-entity">A Noo World Discovery Platform</p>
+      </div>
+      <div>
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="festivals-near-me.html">Festivals Near Me</a></li>
+          <li><a href="this-weekend.html">This Weekend</a></li>
+          <li><a href="category.html">Categories</a></li>
+          <li><a href="city.html">Cities</a></li>
+          <li><a href="submit.html">Submit a Festival</a></li>
+          <li><a href="vendors.html">Vendor Listings</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="ada.html">ADA Accessibility</a></li>
+          <li><a href="affiliates.html">Affiliate Disclosure</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:support@festivalcalendar.online">support@festivalcalendar.online</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FestivalCalendar.online — A Noo World Discovery Platform. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/festivals-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/filters.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('state')) {
+      document.getElementById('state-browse-section').style.display = 'none';
+      document.getElementById('state-results-section').style.display = 'block';
+    }
+  });
+</script>
+</body>
+</html>

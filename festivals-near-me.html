@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festivals Near Me | FestivalCalendar.online</title>
+  <meta name="description" content="Find festivals near you by city, state, category, and date. Discover music, food, art, wellness, spiritual, and cultural festivals in your area." />
+  <link rel="canonical" href="https://festivalcalendar.online/festivals-near-me.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">🎪 FestivalCalendar</a>
+    <ul class="nav-links">
+      <li><a href="festivals-near-me.html" class="active">Near Me</a></li>
+      <li><a href="this-weekend.html">This Weekend</a></li>
+      <li><a href="category.html">Categories</a></li>
+      <li><a href="city.html">Cities</a></li>
+      <li><a href="submit.html">Submit</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://id.thenooworld.com?redirect=https://festivalcalendar.online" class="btn btn-outline btn-sm">Sign in with Noo World</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">Discover Your Next Experience</span>
+    <h1>Festivals Near You</h1>
+    <p class="page-hero-sub">Browse music, food, art, wellness, spiritual, and cultural festivals across the country. Filter by city, category, or price to find your perfect festival weekend.</p>
+    <form class="search-bar mt-24" id="search-form" role="search" style="max-width:680px;margin:24px auto 0">
+      <input type="text" name="city" placeholder="City, state, or region…" aria-label="Search by city" />
+      <select name="category" aria-label="Category">
+        <option value="">All Categories</option>
+        <option value="Music">🎵 Music</option>
+        <option value="Food">🍕 Food</option>
+        <option value="Art">🎨 Art</option>
+        <option value="Wellness">🧘 Wellness</option>
+        <option value="Cultural">🌍 Cultural</option>
+        <option value="Spiritual">✨ Spiritual</option>
+      </select>
+      <input type="date" name="date" aria-label="Date" />
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="filter-bar" role="group" aria-label="Filter by category">
+      <span class="filter-label">Category:</span>
+      <button class="filter-chip active" data-group="cat" data-category="">All</button>
+      <button class="filter-chip" data-group="cat" data-category="music">🎵 Music</button>
+      <button class="filter-chip" data-group="cat" data-category="food">🍕 Food</button>
+      <button class="filter-chip" data-group="cat" data-category="art">🎨 Art</button>
+      <button class="filter-chip" data-group="cat" data-category="wellness">🧘 Wellness</button>
+      <button class="filter-chip" data-group="cat" data-category="cultural">🌍 Cultural</button>
+      <button class="filter-chip" data-group="cat" data-category="spiritual">✨ Spiritual</button>
+    </div>
+
+    <div class="flex justify-between items-center mb-24" style="flex-wrap:wrap;gap:12px">
+      <p style="color:var(--text-muted);font-size:0.875rem">Showing all festivals · Sorted by date</p>
+      <div class="flex gap-8">
+        <span class="filter-chip" data-group="price">Free</span>
+        <span class="filter-chip" data-group="price">Paid</span>
+      </div>
+    </div>
+
+    <div class="festivals-grid" id="near-me-results"></div>
+
+    <div class="mt-48 text-center">
+      <div class="sticky-note" style="display:inline-block;max-width:560px">
+        📍 <strong>Location-based search coming soon.</strong> We're building GPS-powered "festivals near me" discovery. For now, search by city or state above.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="email-signup">
+      <span class="section-eyebrow">Never Miss a Festival</span>
+      <h2>Get Festival Alerts Near You</h2>
+      <p>Enter your email and we'll send weekly festival picks based on the cities and categories you care about.</p>
+      <form class="email-form email-signup-form">
+        <input type="email" class="form-control" placeholder="your@email.com" required aria-label="Email" />
+        <button type="submit" class="btn btn-primary">Get Alerts</button>
+        <div class="form-success">🎉 You're on the list! Weekly picks coming your way.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">🎪 FestivalCalendar</div>
+        <p>Find festivals near you. Save your favorites. Build your personal festival calendar.</p>
+        <p class="footer-entity">A Noo World Discovery Platform</p>
+      </div>
+      <div>
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="festivals-near-me.html">Festivals Near Me</a></li>
+          <li><a href="this-weekend.html">This Weekend</a></li>
+          <li><a href="category.html">Categories</a></li>
+          <li><a href="city.html">Cities</a></li>
+          <li><a href="submit.html">Submit a Festival</a></li>
+          <li><a href="vendors.html">Vendor Listings</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="ada.html">ADA Accessibility</a></li>
+          <li><a href="affiliates.html">Affiliate Disclosure</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:support@festivalcalendar.online">support@festivalcalendar.online</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FestivalCalendar.online — A Noo World Discovery Platform. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/festivals-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/filters.js"></script>
+</body>
+</html>

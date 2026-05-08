@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festival Vendor Listings | FestivalCalendar.online</title>
+  <meta name="description" content="Promote your vendor business at festivals. Create a vendor listing and connect with festival organizers looking for food trucks, artists, crafters, and more." />
+  <link rel="canonical" href="https://festivalcalendar.online/vendors.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">🎪 FestivalCalendar</a>
+    <ul class="nav-links">
+      <li><a href="festivals-near-me.html">Near Me</a></li>
+      <li><a href="this-weekend.html">This Weekend</a></li>
+      <li><a href="category.html">Categories</a></li>
+      <li><a href="city.html">Cities</a></li>
+      <li><a href="submit.html">Submit</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://id.thenooworld.com?redirect=https://festivalcalendar.online" class="btn btn-outline btn-sm">Sign in with Noo World</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">For Vendors &amp; Makers</span>
+    <h1>Festival Vendor Listings</h1>
+    <p class="page-hero-sub">Promote your vendor business to festival organizers actively looking for food trucks, artists, crafters, and specialty vendors. Get discovered across hundreds of festivals.</p>
+  </div>
+</section>
+
+<!-- Vendor Tiers -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Vendor Plans</span>
+      <h2>Choose Your Listing Level</h2>
+      <p>Start with a basic listing and upgrade as your festival season grows.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div>
+          <div class="pricing-name">Starter</div>
+          <div class="pricing-price">$19</div>
+          <div class="pricing-desc">Get your vendor profile in front of festival organizers.</div>
+        </div>
+        <ul class="pricing-features">
+          <li>Basic vendor profile listing</li>
+          <li>Business name &amp; description</li>
+          <li>Category &amp; city tags</li>
+          <li>Contact info or link</li>
+          <li>Searchable in vendor directory</li>
+        </ul>
+        <button class="btn btn-outline btn-block" data-product="vendor-starter" onclick="document.getElementById('vendor-form-section').scrollIntoView({behavior:'smooth'})">Create Starter Listing</button>
+      </div>
+
+      <div class="pricing-card featured">
+        <div>
+          <div class="pricing-name">Enhanced</div>
+          <div class="pricing-price">$49</div>
+          <div class="pricing-desc">Stand out with a full profile and multi-city exposure.</div>
+        </div>
+        <ul class="pricing-features">
+          <li>Everything in Starter</li>
+          <li>Extended business description</li>
+          <li>Multi-city targeting (up to 5)</li>
+          <li>Vendor specialty tags</li>
+          <li>Priority vendor placement</li>
+          <li>Featured in festival vendor results</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-product="vendor-enhanced" onclick="document.getElementById('vendor-form-section').scrollIntoView({behavior:'smooth'})">Create Enhanced Listing</button>
+      </div>
+
+      <div class="pricing-card">
+        <div>
+          <div class="pricing-name">Premium</div>
+          <div class="pricing-price">$99</div>
+          <div class="pricing-desc">Maximum visibility with top placement and full profile.</div>
+        </div>
+        <ul class="pricing-features">
+          <li>Everything in Enhanced</li>
+          <li>Nationwide city targeting</li>
+          <li>Top-tier vendor placement</li>
+          <li>Featured on relevant festival pages</li>
+          <li>Photo gallery support</li>
+          <li>Social media link integration</li>
+        </ul>
+        <button class="btn btn-teal btn-block" data-product="vendor-premium" onclick="document.getElementById('vendor-form-section').scrollIntoView({behavior:'smooth'})">Create Premium Listing</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Who It's For -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>Perfect For</h2>
+      <p>Any vendor, maker, or service that operates at festivals and events.</p>
+    </div>
+    <div class="categories-grid" style="grid-template-columns:repeat(auto-fill,minmax(160px,1fr))">
+      <div class="category-card" style="cursor:default"><span class="cat-emoji">🚚</span><div class="cat-name">Food Trucks</div></div>
+      <div class="category-card" style="cursor:default"><span class="cat-emoji">🎨</span><div class="cat-name">Artists</div></div>
+      <div class="category-card" style="cursor:default"><span class="cat-emoji">💎</span><div class="cat-name">Jewelry Makers</div></div>
+      <div class="category-card" style="cursor:default"><span class="cat-emoji">🧺</span><div class="cat-name">Craft Vendors</div></div>
+      <div class="category-card" style="cursor:default"><span class="cat-emoji">🌿</span><div class="cat-name">Wellness Booths</div></div>
+      <div class="category-card" style="cursor:default"><span class="cat-emoji">📸</span><div class="cat-name">Photographers</div></div>
+      <div class="category-card" style="cursor:default"><span class="cat-emoji">🎵</span><div class="cat-name">Musicians</div></div>
+      <div class="category-card" style="cursor:default"><span class="cat-emoji">🧪</span><div class="cat-name">Specialty Products</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Vendor Application Form -->
+<section class="section" id="vendor-form-section">
+  <div class="container" style="max-width:720px">
+    <div class="section-header">
+      <h2>Create Your Vendor Profile</h2>
+      <p>Fill out the form below and we'll set up your vendor listing. After submission, we'll contact you with payment and publishing details.</p>
+    </div>
+
+    <form id="vendor-form" novalidate>
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <div class="form-group">
+          <label for="vendor-name">Business Name *</label>
+          <input type="text" id="vendor-name" name="vendor-name" class="form-control" placeholder="Your business or vendor name" required />
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="vendor-type">Vendor Type *</label>
+            <select id="vendor-type" name="vendor-type" class="form-control" required>
+              <option value="">Select type</option>
+              <option>Food Truck</option>
+              <option>Artist</option>
+              <option>Jewelry</option>
+              <option>Craft Vendor</option>
+              <option>Wellness</option>
+              <option>Photography</option>
+              <option>Musician / Performer</option>
+              <option>Specialty Products</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="vendor-cities">Primary Cities</label>
+            <input type="text" id="vendor-cities" name="vendor-cities" class="form-control" placeholder="e.g. Austin, Nashville, Denver" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="vendor-description">Describe Your Business *</label>
+          <textarea id="vendor-description" name="vendor-description" class="form-control" rows="4" placeholder="What you offer, what makes you unique, your experience at festivals, any specialties or signature items…" required></textarea>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="vendor-website">Website / Social Link</label>
+            <input type="url" id="vendor-website" name="vendor-website" class="form-control" placeholder="https://yourbusiness.com" />
+          </div>
+          <div class="form-group">
+            <label for="vendor-email">Contact Email *</label>
+            <input type="email" id="vendor-email" name="vendor-email" class="form-control" placeholder="you@email.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Listing Tier</label>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <label class="form-check"><input type="radio" name="tier" value="starter" /> <span>Starter — $19</span></label>
+            <label class="form-check"><input type="radio" name="tier" value="enhanced" checked /> <span>Enhanced — $49</span></label>
+            <label class="form-check"><input type="radio" name="tier" value="premium" /> <span>Premium — $99</span></label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">Submit Vendor Application</button>
+        <div class="form-success">✅ Application received! We'll follow up within 1–2 business days with payment details and your listing link.</div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">🎪 FestivalCalendar</div>
+        <p>Find festivals near you. Save your favorites. Build your personal festival calendar.</p>
+        <p class="footer-entity">A Noo World Discovery Platform</p>
+      </div>
+      <div>
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="festivals-near-me.html">Festivals Near Me</a></li>
+          <li><a href="this-weekend.html">This Weekend</a></li>
+          <li><a href="category.html">Categories</a></li>
+          <li><a href="city.html">Cities</a></li>
+          <li><a href="submit.html">Submit a Festival</a></li>
+          <li><a href="vendors.html">Vendor Listings</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="ada.html">ADA Accessibility</a></li>
+          <li><a href="affiliates.html">Affiliate Disclosure</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:support@festivalcalendar.online">support@festivalcalendar.online</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FestivalCalendar.online — A Noo World Discovery Platform. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/festivals-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/filters.js"></script>
+</body>
+</html>

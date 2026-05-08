@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit a Festival | FestivalCalendar.online</title>
+  <meta name="description" content="Submit your festival to FestivalCalendar.online. Free basic listings available. Featured placements starting at $9." />
+  <link rel="canonical" href="https://festivalcalendar.online/submit.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">🎪 FestivalCalendar</a>
+    <ul class="nav-links">
+      <li><a href="festivals-near-me.html">Near Me</a></li>
+      <li><a href="this-weekend.html">This Weekend</a></li>
+      <li><a href="category.html">Categories</a></li>
+      <li><a href="city.html">Cities</a></li>
+      <li><a href="submit.html" class="active">Submit</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://id.thenooworld.com?redirect=https://festivalcalendar.online" class="btn btn-outline btn-sm">Sign in with Noo World</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">Get Listed</span>
+    <h1>Submit Your Festival</h1>
+    <p class="page-hero-sub">Get your festival in front of thousands of discovery-ready festival-goers. Basic listings are always free. Featured placements start at $9.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:760px">
+
+    <div class="sticky-note mb-32">
+      ℹ️ <strong>Free submissions</strong> are reviewed before publishing (typically 2–3 business days). For instant featured placement, <a href="pricing.html" style="color:var(--orange)">see our pricing options</a>.
+    </div>
+
+    <form id="submit-festival-form" novalidate>
+      <div style="display:flex;flex-direction:column;gap:20px">
+
+        <h3 style="color:var(--text-primary)">Festival Details</h3>
+
+        <div class="form-group">
+          <label for="festival-name">Festival Name *</label>
+          <input type="text" id="festival-name" name="festival-name" class="form-control" placeholder="e.g. Austin City Limits Music Festival" required />
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="category">Category *</label>
+            <select id="category" name="category" class="form-control" required>
+              <option value="">Select a category</option>
+              <option value="Music">🎵 Music</option>
+              <option value="Food">🍕 Food</option>
+              <option value="Art">🎨 Art</option>
+              <option value="Wellness">🧘 Wellness</option>
+              <option value="Cultural">🌍 Cultural</option>
+              <option value="Spiritual">✨ Spiritual</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="price-type">Admission</label>
+            <select id="price-type" name="price-type" class="form-control">
+              <option value="Free">Free</option>
+              <option value="Paid">Paid</option>
+              <option value="Mixed">Mixed (some free, some paid)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="city">City *</label>
+            <input type="text" id="city" name="city" class="form-control" placeholder="e.g. Austin" required />
+          </div>
+          <div class="form-group">
+            <label for="state">State *</label>
+            <input type="text" id="state" name="state" class="form-control" placeholder="e.g. Texas or TX" required />
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="start-date">Start Date *</label>
+            <input type="date" id="start-date" name="start-date" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="end-date">End Date</label>
+            <input type="date" id="end-date" name="end-date" class="form-control" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Festival Description *</label>
+          <textarea id="description" name="description" class="form-control" rows="4" placeholder="Describe your festival — what makes it special, what attendees can expect, highlights, performers, etc." required></textarea>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="website">Festival Website</label>
+            <input type="url" id="website" name="website" class="form-control" placeholder="https://yourfestival.com" />
+          </div>
+          <div class="form-group">
+            <label for="ticket-url">Ticket Purchase URL</label>
+            <input type="url" id="ticket-url" name="ticket-url" class="form-control" placeholder="https://tickets.yourfestival.com" />
+          </div>
+        </div>
+
+        <label class="form-check">
+          <input type="checkbox" name="vendor-opportunities" />
+          <span>This festival has vendor/vendor opportunities</span>
+        </label>
+
+        <div class="divider"></div>
+        <h3 style="color:var(--text-primary)">Organizer Contact</h3>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="organizer-name">Organizer Name *</label>
+            <input type="text" id="organizer-name" name="organizer-name" class="form-control" placeholder="Your name or organization" required />
+          </div>
+          <div class="form-group">
+            <label for="organizer-email">Contact Email *</label>
+            <input type="email" id="organizer-email" name="organizer-email" class="form-control" placeholder="you@youremail.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-check">
+            <input type="checkbox" name="agree-terms" required />
+            <span>I confirm the festival information is accurate and I agree to the <a href="terms.html" style="color:var(--orange)">Terms of Service</a>.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">Submit Festival for Review</button>
+        <div class="form-success">✅ Your festival has been submitted! We'll review and publish it within 2–3 business days. Check your email for confirmation.</div>
+      </div>
+    </form>
+
+    <div class="divider"></div>
+
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-card);padding:32px;text-align:center">
+      <h3 style="color:var(--text-primary);margin-bottom:8px">Want Instant Visibility?</h3>
+      <p class="mb-16">Skip the review queue and get your festival featured immediately on city, state, and category pages.</p>
+      <a href="pricing.html" class="btn btn-primary">See Featured Placement Options →</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">🎪 FestivalCalendar</div>
+        <p>Find festivals near you. Save your favorites. Build your personal festival calendar.</p>
+        <p class="footer-entity">A Noo World Discovery Platform</p>
+      </div>
+      <div>
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="festivals-near-me.html">Festivals Near Me</a></li>
+          <li><a href="this-weekend.html">This Weekend</a></li>
+          <li><a href="category.html">Categories</a></li>
+          <li><a href="city.html">Cities</a></li>
+          <li><a href="submit.html">Submit a Festival</a></li>
+          <li><a href="vendors.html">Vendor Listings</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="ada.html">ADA Accessibility</a></li>
+          <li><a href="affiliates.html">Affiliate Disclosure</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:support@festivalcalendar.online">support@festivalcalendar.online</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FestivalCalendar.online — A Noo World Discovery Platform. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/festivals-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/filters.js"></script>
+</body>
+</html>
