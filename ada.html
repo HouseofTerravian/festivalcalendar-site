@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -34,40 +34,51 @@
   </div>
 </nav>
 
-<div class="legal-content">
-  <h1>ADA Accessibility Statement</h1>
-  <p class="legal-date">Last updated: May 2026</p>
+<div class="legal-layout">
+  <aside class="legal-nav" aria-label="Sections">
+    <p class="legal-nav-title">Contents</p>
+    <a href="#commitment">1. Our Commitment</a>
+    <a href="#limitations">2. Known Limitations</a>
+    <a href="#feedback">3. Feedback &amp; Assistance</a>
+    <a href="#third-party">4. Third-Party Content</a>
+    <a href="#improvement">5. Ongoing Improvement</a>
+  </aside>
 
-  <p>FestivalCalendar.online is committed to providing an accessible and inclusive digital experience for all users, including people with disabilities.</p>
+  <main class="legal-body">
+    <h1>ADA Accessibility Statement</h1>
+    <span class="legal-date">Last updated: May 2026</span>
 
-  <h2>Our Commitment</h2>
-  <p>We strive to follow accessibility best practices and aim to meet the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards. Our ongoing efforts include:</p>
-  <ul>
-    <li>Readable text with sufficient contrast ratios</li>
-    <li>Clear, logical page navigation and structure</li>
-    <li>Mobile-friendly, responsive layout</li>
-    <li>Keyboard-navigable interface design</li>
-    <li>Descriptive alt text for images where applicable</li>
-    <li>Accessible form labels and error messaging</li>
-    <li>Proper semantic HTML structure</li>
-    <li>ARIA labels on interactive elements</li>
-  </ul>
+    <p>FestivalCalendar.online is committed to providing an accessible and inclusive digital experience for all users, including people with disabilities. This site is operated by <strong>SlateRiver LLC</strong>, a New Mexico LLC, as a Noo World Discovery Platform.</p>
 
-  <h2>Known Limitations</h2>
-  <p>FestivalCalendar.online is an evolving platform. Some features or third-party content embedded on the site may not fully meet accessibility standards at this time. We are actively working to identify and resolve these gaps.</p>
+    <h2 id="commitment">1. Our Commitment</h2>
+    <p>We strive to follow accessibility best practices and aim to meet the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards. Our ongoing efforts include:</p>
+    <ul>
+      <li>Readable text with sufficient contrast ratios</li>
+      <li>Clear, logical page navigation and structure</li>
+      <li>Mobile-friendly, responsive layout</li>
+      <li>Keyboard-navigable interface design</li>
+      <li>Descriptive alt text for images where applicable</li>
+      <li>Accessible form labels and error messaging</li>
+      <li>Proper semantic HTML structure</li>
+      <li>ARIA labels on interactive elements</li>
+    </ul>
 
-  <h2>Feedback &amp; Assistance</h2>
-  <p>If you experience difficulty accessing any part of FestivalCalendar.online, or if you need information in an alternative format, please contact us:</p>
-  <ul>
-    <li><strong>Email:</strong> <a href="mailto:support@festivalcalendar.online">support@festivalcalendar.online</a></li>
-  </ul>
-  <p>We will make reasonable efforts to improve accessibility and to assist users who encounter barriers on our site. Please include a description of the page or feature you had difficulty with and your preferred contact method so we can respond appropriately.</p>
+    <h2 id="limitations">2. Known Limitations</h2>
+    <p>FestivalCalendar.online is an evolving platform. Some features or third-party content embedded on the site may not fully meet accessibility standards at this time. We are actively working to identify and resolve these gaps.</p>
 
-  <h2>Third-Party Content</h2>
-  <p>FestivalCalendar.online may link to or embed content from third-party providers such as ticketing platforms, payment processors, and external websites. We cannot guarantee the accessibility of third-party content and encourage users to report any issues they encounter.</p>
+    <h2 id="feedback">3. Feedback &amp; Assistance</h2>
+    <p>If you experience difficulty accessing any part of FestivalCalendar.online, or if you need information in an alternative format, please contact us:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:support@festivalcalendar.online">support@festivalcalendar.online</a></li>
+    </ul>
+    <p>We will make reasonable efforts to improve accessibility and to assist users who encounter barriers on our site. Please include a description of the page or feature you had difficulty with and your preferred contact method so we can respond appropriately.</p>
 
-  <h2>Ongoing Improvement</h2>
-  <p>We are committed to continuously improving the accessibility of our platform. This statement will be updated as we make improvements and as accessibility standards evolve.</p>
+    <h2 id="third-party">4. Third-Party Content</h2>
+    <p>FestivalCalendar.online may link to or embed content from third-party providers such as ticketing platforms, payment processors, and external websites. We cannot guarantee the accessibility of third-party content and encourage users to report any issues they encounter.</p>
+
+    <h2 id="improvement">5. Ongoing Improvement</h2>
+    <p>We are committed to continuously improving the accessibility of our platform. This statement will be updated as we make improvements and as accessibility standards evolve.</p>
+  </main>
 </div>
 
 <footer class="site-footer">
@@ -101,6 +112,7 @@
           <li><a href="ada.html">ADA Accessibility</a></li>
           <li><a href="affiliates.html">Affiliate Disclosure</a></li>
           <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="dmca.html">DMCA</a></li>
         </ul>
       </div>
       <div class="footer-contact">
@@ -114,6 +126,14 @@
   </div>
 </footer>
 
+<!-- COOKIE BANNER -->
+<div class="cookie-banner hidden" id="cookieBanner" role="region" aria-label="Cookie notice">
+  <p class="cookie-text">We use cookies and local storage to personalize your experience. <a href="privacy.html">Learn more</a>.</p>
+  <div class="cookie-actions">
+    <a class="cookie-learn" href="privacy.html">Learn More</a>
+    <button class="cookie-accept" id="cookieAccept">Accept</button>
+  </div>
+</div>
 <script src="js/main.js"></script>
 </body>
 </html>

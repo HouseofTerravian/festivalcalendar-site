@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -34,41 +34,54 @@
   </div>
 </nav>
 
-<div class="legal-content">
-  <h1>Disclaimer</h1>
-  <p class="legal-date">Last updated: May 2026</p>
+<div class="legal-layout">
+  <aside class="legal-nav" aria-label="Sections">
+    <p class="legal-nav-title">Contents</p>
+    <a href="#accuracy">1. Accuracy of Event Info</a>
+    <a href="#verify">2. Verify Before You Go</a>
+    <a href="#liability">3. No Liability</a>
+    <a href="#third-party">4. Third-Party Links</a>
+    <a href="#advice">5. No Professional Advice</a>
+    <a href="#affiliate">6. Affiliate Disclaimer</a>
+    <a href="#contact">7. Contact</a>
+  </aside>
 
-  <p>FestivalCalendar.online provides event discovery information for convenience and informational purposes only. The following disclaimer applies to all content, listings, links, and information provided on this website.</p>
+  <main class="legal-body">
+    <h1>Disclaimer</h1>
+    <span class="legal-date">Last updated: May 2026</span>
 
-  <h2>Accuracy of Event Information</h2>
-  <p>Event dates, times, prices, locations, lineup details, availability, ticket links, vendor opportunities, and all other event details may change without notice. Festival organizers are responsible for keeping their submitted information accurate. FestivalCalendar.online does not independently verify all listing details.</p>
+    <p>FestivalCalendar.online provides event discovery information for convenience and informational purposes only. FestivalCalendar.online is operated by <strong>SlateRiver LLC</strong>, a New Mexico LLC. The following disclaimer applies to all content, listings, links, and information provided on this website.</p>
 
-  <h2>Verify Before You Go</h2>
-  <p><strong>Always verify event information directly with the official event organizer before attending, traveling, purchasing tickets, or applying as a vendor.</strong> Do not rely solely on information displayed on FestivalCalendar.online when making travel, financial, or attendance decisions.</p>
+    <h2 id="accuracy">1. Accuracy of Event Information</h2>
+    <p>Event dates, times, prices, locations, lineup details, availability, ticket links, vendor opportunities, and all other event details may change without notice. Festival organizers are responsible for keeping their submitted information accurate. FestivalCalendar.online does not independently verify all listing details.</p>
 
-  <h2>No Liability for Event Outcomes</h2>
-  <p>FestivalCalendar.online is not responsible for:</p>
-  <ul>
-    <li>Event cancellations, postponements, or changes</li>
-    <li>Inaccurate or outdated listing information</li>
-    <li>Travel expenses incurred based on listing information</li>
-    <li>Safety conditions at events</li>
-    <li>Vendor application outcomes or rejections</li>
-    <li>Third-party platform experiences (ticketing sites, travel sites)</li>
-    <li>Any damages, losses, or disappointments arising from attending or not attending an event listed on this platform</li>
-  </ul>
+    <h2 id="verify">2. Verify Before You Go</h2>
+    <p><strong>Always verify event information directly with the official event organizer before attending, traveling, purchasing tickets, or applying as a vendor.</strong> Do not rely solely on information displayed on FestivalCalendar.online when making travel, financial, or attendance decisions.</p>
 
-  <h2>Third-Party Links</h2>
-  <p>FestivalCalendar.online includes links to external websites, ticketing platforms, and third-party services. We do not control these external sites and are not responsible for their content, accuracy, privacy practices, or any transactions conducted on them.</p>
+    <h2 id="liability">3. No Liability for Event Outcomes</h2>
+    <p>FestivalCalendar.online and SlateRiver LLC are not responsible for:</p>
+    <ul>
+      <li>Event cancellations, postponements, or changes</li>
+      <li>Inaccurate or outdated listing information</li>
+      <li>Travel expenses incurred based on listing information</li>
+      <li>Safety conditions at events</li>
+      <li>Vendor application outcomes or rejections</li>
+      <li>Third-party platform experiences (ticketing sites, travel sites)</li>
+      <li>Any damages, losses, or disappointments arising from attending or not attending an event listed on this platform</li>
+    </ul>
 
-  <h2>No Professional Advice</h2>
-  <p>Nothing on FestivalCalendar.online constitutes legal, financial, travel, health, or safety advice. All content is for general informational purposes only.</p>
+    <h2 id="third-party">4. Third-Party Links</h2>
+    <p>FestivalCalendar.online includes links to external websites, ticketing platforms, and third-party services. We do not control these external sites and are not responsible for their content, accuracy, privacy practices, or any transactions conducted on them.</p>
 
-  <h2>Affiliate Disclaimer</h2>
-  <p>Some links on this website may be affiliate links. See our <a href="affiliates.html">Affiliate Disclosure</a> for full details.</p>
+    <h2 id="advice">5. No Professional Advice</h2>
+    <p>Nothing on FestivalCalendar.online constitutes legal, financial, travel, health, or safety advice. All content is for general informational purposes only.</p>
 
-  <h2>Contact</h2>
-  <p>For questions or to report inaccurate listing information, contact us at <a href="mailto:support@festivalcalendar.online">support@festivalcalendar.online</a>.</p>
+    <h2 id="affiliate">6. Affiliate Disclaimer</h2>
+    <p>Some links on this website may be affiliate links. See our <a href="affiliates.html">Affiliate Disclosure</a> for full details.</p>
+
+    <h2 id="contact">7. Contact</h2>
+    <p>For questions or to report inaccurate listing information, contact us at <a href="mailto:support@festivalcalendar.online">support@festivalcalendar.online</a>.</p>
+  </main>
 </div>
 
 <footer class="site-footer">
@@ -102,6 +115,7 @@
           <li><a href="ada.html">ADA Accessibility</a></li>
           <li><a href="affiliates.html">Affiliate Disclosure</a></li>
           <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="dmca.html">DMCA</a></li>
         </ul>
       </div>
       <div class="footer-contact">
@@ -115,6 +129,14 @@
   </div>
 </footer>
 
+<!-- COOKIE BANNER -->
+<div class="cookie-banner hidden" id="cookieBanner" role="region" aria-label="Cookie notice">
+  <p class="cookie-text">We use cookies and local storage to personalize your experience. <a href="privacy.html">Learn more</a>.</p>
+  <div class="cookie-actions">
+    <a class="cookie-learn" href="privacy.html">Learn More</a>
+    <button class="cookie-accept" id="cookieAccept">Accept</button>
+  </div>
+</div>
 <script src="js/main.js"></script>
 </body>
 </html>

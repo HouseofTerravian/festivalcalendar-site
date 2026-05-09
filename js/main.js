@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNav();
   initPage();
   initForms();
+  initCookieBanner();
 });
 
 /* ── Nav ───────────────────────────────────────────────────── */
@@ -242,6 +243,21 @@ function initTheme() {
     const current = document.documentElement.dataset.theme || 'dark';
     applyTheme(current === 'dark' ? 'light' : 'dark', true);
   });
+}
+
+/* ── Cookie Banner ─────────────────────────────────────────── */
+function initCookieBanner() {
+  const COOKIE_KEY = 'fco_cookie_accepted';
+  const banner = document.getElementById('cookieBanner');
+  if (!banner) return;
+  if (!localStorage.getItem(COOKIE_KEY)) banner.classList.remove('hidden');
+  const btn = document.getElementById('cookieAccept');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      localStorage.setItem(COOKIE_KEY, '1');
+      banner.classList.add('hidden');
+    });
+  }
 }
 
 function applyTheme(theme, animate) {
